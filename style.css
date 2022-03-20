@@ -1,0 +1,22 @@
+/* ############ BASIC CONFIGURATIONS ########## */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- root variables */
+
+:root {
+  --hue: 200;
+  --saturation: 50%;
+  --foreground-color: hsl(var(--hue), var(--saturation), 75%);
+  --background-color: hsl(var(--hue), var(--saturation), 20%);
+}
+
+body {
+  background: var(--background-color);
+  overflow: hidden;
+}
